@@ -1,0 +1,160 @@
+.Home_section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &_list {
+        width: 1575px;
+        display: flex;
+        margin-top: 30px;
+        // overflow: hidden; 
+
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #19202C;
+            margin-bottom: 4px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.span_opacity{
+    color: #fff;
+    opacity: 0.4;
+}
+
+.slider_item {
+    position: relative;
+
+    &-time {
+        position: absolute;
+        top: 110px;
+        right: 27%;
+    }
+}
+
+.slider_bigger-item{
+    position: relative;
+    &-time{
+        position: absolute;
+        top: 216px;
+        right: 70px;
+    }
+}
+
+.time {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-style: normal;
+    font-weight: normal;
+    padding: 3px 9px;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #fff;
+}
+
+
+.mini-box {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-box {
+    margin-left: 1220px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.dollie-box {
+    display: flex;
+    align-items: center;
+
+    &-name {
+        margin-left: 20px;
+    }
+
+    &_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #C2C2C2;
+        margin-left: 19px;
+    }
+}
+
+.food_button-box {
+    display: flex;
+    align-items: center;
+    margin-left: 730px;
+}
+
+.rec_btn {
+    margin-right: 40px;
+}
+
+.reccomended {
+    margin-top: 49px;
+    margin-bottom: 50px;
+
+    &_list {
+        display: flex;
+        width: 1575px;
+    }
+
+    &_box-name {
+        margin-bottom: 30px;
+    }
+
+    & li {
+        margin-right: 40px;
+    }
+}
+
+.rec_mini-box {
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slick-arrow {
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.24;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+}
+
+.light_text{
+    color: #fff;
+}
+
+.none_slider{
+    display: none;
+}
+
+
+@media only screen and (max-width:475px) {
+    .dollie-box{
+        display: none;
+    }
+    .block_slider{
+        display: none;
+    }
+    .none_slider{
+        display: block;
+        justify-content: center;
+        & .slider_item{
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,262 @@
+.videos {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &_box {
+        width: 1180px;
+
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 45px;
+            margin-top: 20px;
+            margin-bottom: 14px;
+        }
+
+        &-views {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #C2C2C2;
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &_bottom-box {
+        display: flex;
+        margin-top: 38px;
+    }
+
+    &_text-box {
+        margin-left: 12px;
+    }
+
+    &-btn {
+        height: 40px;
+        margin-left: auto;
+    }
+
+    &_left-box {
+        width: 1180px;
+    }
+
+    &_right-box {
+        margin-left: 40px;
+        height: 100vh;
+
+        &-top {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.show_more {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #C2C2C2;
+}
+
+
+.color_darkblue {
+    color: #192646;
+}
+
+.general_box {
+    display: flex;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background: rgba(235, 235, 235, 0.3);
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    padding: 15px 20px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.like-box {
+    margin-left: auto;
+}
+
+.simple {
+    color: #000;
+    opacity: 0.24
+}
+
+.red {
+    opacity: 1;
+    color: red;
+}
+
+.line {
+    width: 1363px;
+    height: 1px;
+    border: none;
+    background: rgba(216, 216, 216, 0.5);
+    margin-top: 15px;
+}
+
+.time_subscribed {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+    margin-top: 4px;
+}
+
+.about_channel {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    width: 820px;
+    margin: 15px 0;
+}
+
+.autoplay_mini-list{
+    height: 0;
+    overflow-y: hidden;
+}
+
+.autoplay {
+    &_text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 130px;
+    }
+
+    &_list {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: auto;
+        padding-bottom: 30px;
+    }
+
+    &_item {
+        margin-bottom: 30px;
+    }
+
+    &_span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color: #C2C2C2;
+    }
+
+    &_author {
+        margin-left: 155px;
+    }
+
+    &_title {
+        margin-top: 13px;
+        margin-bottom: 11px;
+    }
+}
+
+
+.next {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.switch_light {
+    width: 44px;
+    height: 28px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    margin-left: 11px;
+}
+
+.checkbox_light {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 2px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transition: 0.4s;
+    }
+
+    &:checked::before {
+        left: 18px;
+        transition: 0.4s;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.237602);
+    }
+}
+
+.switch {
+    width: 44px;
+    height: 28px;
+    position: relative;
+    background-color: rgba(235, 235, 235, 0.5);
+    border-radius: 14px;
+    margin-left: 11px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 2px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: 0.4s;
+    }
+
+    &:checked::before {
+        left: 18px;
+        transition: 0.4s;
+        background: #2196F3;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.237602);
+    }
+}

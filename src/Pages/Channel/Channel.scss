@@ -1,0 +1,148 @@
+.channel {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &_top-box {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &_info-box {
+        margin-left: 14px;
+    }
+
+    &_btn {
+        margin-left: 20px;
+    }
+
+    &_remind-box {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    &_main-box {
+        display: flex;
+    }
+
+    &_text-box {
+        margin-left: 32px;
+    }
+
+    &_title {
+        width: 431px;
+        margin-bottom: 10px;
+    }
+
+    &_description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        width: 548px;
+        margin-bottom: 30px;
+    }
+
+    &_bottom-box {
+        margin-top: 61px;
+    }
+
+    &_top-part {
+        display: flex;
+        align-items: center;
+    }
+
+    &_button-box {
+        display: flex;
+        align-items: center;
+        margin-left: 1200px;
+    }
+}
+
+.slider_bottom-item {
+    position: relative;
+
+    &-time {
+        position: absolute;
+        bottom: 30%;
+        right: 16%;
+    }
+}
+
+// .span_opacity{
+//     opacity: 0.4;
+// }
+
+// .light_text{
+//     color: #fff;
+// }
+
+
+.right-box {
+    margin-left: 200px;
+}
+
+.follow-box {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &_p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        margin-left: 20px;
+    }
+}
+
+.block-tabs {
+    display: flex;
+    margin-bottom: 54px;
+}
+
+.opacity_06{
+    color: #fff;
+    opacity: 0.6;
+}
+
+.tabs {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    margin-right: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+}
+
+.active-tabs {
+    color: #FF0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #FF0000;
+}
+
+.left-box {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}

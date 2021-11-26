@@ -1,0 +1,130 @@
+.header {
+    padding-top: 20px;
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &_modal-btn {
+        margin-right: 28px;
+    }
+
+    &_label {
+        display: flex;
+        align-items: center;
+        margin-left: 59px;
+        position: relative;
+
+        &-input {
+            background: rgba(235, 235, 235, 0.3);
+            mix-blend-mode: normal;
+            border-radius: 22px;
+            width: 830px;
+            padding: 12px 0 12px 23px;
+            color: #30384C;
+            font-size: 16px;
+            border: none;
+
+            &::placeholder {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: #30384C;
+            }
+        }
+
+        &-lupa {
+            position: absolute;
+            right: 17px;
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    &_list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        &-item:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+    &_btn {
+        position: relative;
+    }
+}
+
+.select {
+    width: 60px;
+    padding: 7px 0;
+    font-size: 15px;
+
+    & option {
+        padding: 7px 0;
+        font-size: 15px;
+    }
+}
+
+.three {
+    position: absolute;
+    right: -6px;
+    top: -4px;
+    width: 18px;
+    height: 18px;
+    padding: 1px 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background: #FF0000;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+
+
+.menu_dark {
+    color: #1F2022;
+    width: 20px;
+    height: 17px;
+}
+
+.menu_light {
+    color: #fff;
+}
+
+.input_light {
+    color: #fff;
+    background: rgba(235, 235, 235, 0.1);
+
+    &::placeholder {
+        color: #fff;
+        opacity: 0.4;
+    }
+}
+
+
+@media only screen and (max-width:475px) {
+    .header {
+        &_modal-btn{
+            display: none;
+        }
+        &_label{
+            display: none;
+        }
+        &_list-item{
+            display: none;
+            &:first-child{
+                display: block;
+            }
+            &:last-child{
+                display: block;
+            }
+        }
+    }
+}

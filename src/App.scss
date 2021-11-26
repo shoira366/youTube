@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../src/Assets/Fonts/mulish-v7-latin-regular.woff2') format('woff2'),
+    url('../src/Assets/Fonts/mulish-v7-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../src/Assets/Fonts/mulish-v7-latin-700.woff2') format('woff2'),
+    url('../src/Assets/Fonts/mulish-v7-latin-700.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish';
+}
+
+.container {
+  width: 1820px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.big-box {
+  & .container {
+    display: flex;
+  }
+}
+
+.title26 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  color: #19202C;
+}
+
+.subscribe {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FF0000;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.text16 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.general_light {
+  background-color: #17171E;
+  color: #fff;
+}
+
+.light_text{
+  color: #fff;
+}

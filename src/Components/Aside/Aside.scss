@@ -1,0 +1,112 @@
+// .active-aside{
+//     display: block;
+// }
+
+.aside {
+    padding-top: 50px;
+    padding-right: 46px;
+    // display: none;
+
+    &_nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        // &-link {
+
+        // }
+    }
+
+    &_followers {
+        &-item {
+            display: flex;
+        }
+
+        &-item:not(:last-child) {
+            margin-bottom: 23px;
+        }
+
+        &-link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #898989;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+.icon_active{
+    fill: red;
+}
+
+.menu {
+    display: flex;
+}
+
+.followers {
+    margin-bottom: 104px;
+
+    &_title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    &_title-light {
+        color: #fff;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.setting {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dialog {
+    border: none;
+}
+
+.active {
+    color: #FF0000;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #898989;
+    margin-bottom: 28px;
+    text-decoration: none;
+}
+
+.active {
+    color: red;
+}
+
+
+@media only screen and (max-width:475px) {
+    .aside{
+        display: none;
+    }
+}
