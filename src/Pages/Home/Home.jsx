@@ -58,28 +58,7 @@ function Home({ left, right }) {
                                     return (
                                         <li className="slider_item" key={post.id}>
                                             <Link to={`/video/${post.id}`}>
-                                                <img style={{ width: 250, height: 150 }} className="img" src={post.postImg} alt="" />
-                                            </Link>
-                                            <span className="time slider_item-time">{post.time}</span>
-                                            <h3 className={theme === 'dark' ? "Home_section_list-title light_text" : "Home_section_list-title"}>{post.title}</h3>
-                                            <div className="mini-box">
-                                                <span className={theme === 'dark' ? "text16 Home_section_list-span span_opacity" : "text16 Home_section_list-span"}>{post.additional}</span>
-                                                <span className={theme === 'dark' ? "text16 Home_section_list-span span_opacity" : "text16 Home_section_list-span"}>{post.author}</span>
-                                            </div>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </Slider>
-                    </div>
-                    <div className="none_slider">
-                        <Slider {...settings_second} className="Home_section_list-second">
-                            {
-                                Posts.filter(post => post.postId === Users[6].userid).map(post => {
-                                    return (
-                                        <li className="slider_item" key={post.id}>
-                                            <Link to={`/video/${post.id}`}>
-                                                <img style={{ width: 288, height: 150 }} className="img" src={post.postImg} alt="" />
+                                                <img style={{ width: 250, height: 150 }} src={post.postImg} alt="" />
                                             </Link>
                                             <span className="time slider_item-time">{post.time}</span>
                                             <h3 className={theme === 'dark' ? "Home_section_list-title light_text" : "Home_section_list-title"}>{post.title}</h3>
